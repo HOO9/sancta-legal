@@ -1,67 +1,230 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>계정 삭제 요청 · 성소 Sancta</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 24px; color: #1a1a2a; line-height: 1.7; background: #faf8f3; }
-  h1 { color: #3b2f6b; border-bottom: 2px solid #f5c47c; padding-bottom: 12px; }
-  h2 { color: #3b2f6b; margin-top: 32px; }
-  .contact { background: #3b2f6b; color: #fff; padding: 20px; border-radius: 8px; margin-top: 32px; }
-  .contact a { color: #f5c47c; font-weight: 600; }
-  code { background: #eee; padding: 2px 6px; border-radius: 3px; }
-  ul, ol { padding-left: 24px; }
-  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; color: #888; font-size: 14px; text-align: center; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계정 삭제 요청 - 성소(Sancta)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background-color: #fafafa;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    header .app-name {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    header .date {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #c9a84c;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #444;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    ul, ol {
+      margin-bottom: 12px;
+      padding-left: 24px;
+    }
+
+    li {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background-color: #fff8e6;
+      border-left: 3px solid #c9a84c;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .contact-box {
+      background-color: #f5f0e6;
+      border: 1px solid #e8dcc4;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .contact-box strong {
+      color: #1a1a1a;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+
+    a {
+      color: #c9a84c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 16px 60px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>계정 및 데이터 삭제 요청</h1>
-<p>성소(Sancta) 앱에서 계정 및 관련 데이터 삭제를 요청하는 방법을 안내합니다.</p>
+  <div class="container">
+    <header>
+      <div class="app-name">성소(Sancta)</div>
+      <h1>계정 및 데이터 삭제 요청</h1>
+      <div class="date">시행일: 2026년 4월 15일</div>
+    </header>
 
-<h2>1. 앱 내 삭제 (권장)</h2>
-<ol>
-  <li>성소 앱을 실행하고 로그인합니다</li>
-  <li>설정 → 계정 → <strong>계정 삭제</strong> 버튼 탭</li>
-  <li>확인 절차 완료 → 즉시 삭제 처리</li>
-</ol>
+    <p>성소(Sancta) 서비스에서 이용자의 계정 및 관련 데이터 삭제를 요청하는 방법을 안내합니다. 이용자는 언제든지 본인의 계정과 개인정보 삭제를 요청할 권리가 있습니다.</p>
 
-<h2>2. 이메일로 요청</h2>
-<p>앱 접근이 어려운 경우 아래 이메일로 요청하세요.</p>
-<div class="contact">
-  문의 이메일: <a href="mailto:heemin1010@gmail.com?subject=[성소]%20계정%20삭제%20요청">heemin1010@gmail.com</a><br>
-  제목: <code>[성소] 계정 삭제 요청</code><br>
-  본문: 가입 시 사용한 이메일 주소 기재
-</div>
+    <h2>1. 앱 내 삭제 (권장)</h2>
 
-<h2>3. 삭제되는 데이터</h2>
-<ul>
-  <li>계정 정보 (이메일, 이름, 프로필 이미지)</li>
-  <li>기도 기록 및 음성 녹음 파일</li>
-  <li>수집한 말씀 카드 해금 기록</li>
-  <li>대리 기도 요청 내역</li>
-  <li>기도 광장에 작성한 게시물 및 댓글</li>
-  <li>앱 사용 분석 데이터</li>
-</ul>
+    <ol>
+      <li>성소 앱을 실행하고 로그인합니다</li>
+      <li>하단 탭에서 <strong>설정</strong>으로 이동합니다</li>
+      <li><strong>계정</strong> 섹션의 <strong>계정 삭제</strong> 버튼을 탭합니다</li>
+      <li>안내에 따라 확인 절차를 완료하면 즉시 삭제가 처리됩니다</li>
+    </ol>
 
-<h2>4. 보관되는 데이터</h2>
-<ul>
-  <li>법령상 보관 의무가 있는 데이터 — 최대 5년</li>
-  <li>익명화된 통계 데이터 — 개인 식별 불가능한 형태로 유지될 수 있음</li>
-</ul>
+    <div class="highlight">
+      앱 내 삭제는 즉시 처리되며, 별도의 대기 기간 없이 계정과 연관된 모든 데이터가 삭제됩니다.
+    </div>
 
-<h2>5. 처리 기간</h2>
-<p><strong>요청 접수 후 최대 30일 이내</strong>에 삭제 처리됩니다. 이메일 요청 시 확인을 위해 추가 본인 인증을 요청할 수 있습니다.</p>
+    <h2>2. 이메일로 요청</h2>
 
-<h2>6. 삭제 후 영향</h2>
-<ul>
-  <li>계정 복구 불가능 — 동일 이메일로 재가입은 가능하나 과거 기록은 복원되지 않습니다</li>
-  <li>진행 중인 대리 기도 요청은 자동으로 해제됩니다</li>
-  <li>기도 광장 게시물은 삭제되며 다른 사용자에게도 더 이상 노출되지 않습니다</li>
-</ul>
+    <p>앱 접근이 어려운 경우 아래 이메일로 삭제 요청을 보내주세요.</p>
 
-<footer>
-  성소 Sancta · 최종 업데이트: 2026-04-15
-</footer>
+    <div class="contact-box">
+      <strong>문의 이메일:</strong> <a href="mailto:heemin1010@gmail.com?subject=[성소]%20계정%20삭제%20요청">heemin1010@gmail.com</a><br>
+      <strong>제목:</strong> <code>[성소] 계정 삭제 요청</code><br>
+      <strong>본문:</strong> 가입 시 사용한 이메일 주소를 반드시 기재해 주세요
+    </div>
+
+    <h2>3. 삭제되는 데이터</h2>
+
+    <ul>
+      <li>계정 정보 (이메일 주소, 닉네임, 프로필 이미지)</li>
+      <li>기도 기록 및 음성 녹음 파일</li>
+      <li>음성-텍스트 변환 결과 및 기도 내용</li>
+      <li>말씀 카드 해금 기록 및 수집 현황</li>
+      <li>대리 기도 요청 및 응답 내역</li>
+      <li>기도 광장에 작성한 게시물 및 댓글</li>
+      <li>앱 사용 기록 및 기도 스트릭 데이터</li>
+      <li>소셜 로그인 연동 정보 (Google, Apple, Kakao)</li>
+    </ul>
+
+    <h2>4. 보관되는 데이터</h2>
+
+    <p>관련 법령에 따라 일부 데이터는 삭제 요청 이후에도 일정 기간 보관될 수 있습니다.</p>
+
+    <ul>
+      <li>법령상 보관 의무가 있는 기록 (최대 5년)</li>
+      <li>익명화되어 개인 식별이 불가능한 통계 데이터</li>
+      <li>부정 이용 방지 목적의 최소한의 이력 (최대 1년)</li>
+    </ul>
+
+    <h2>5. 처리 기간</h2>
+
+    <p>요청 접수 후 <strong>최대 30일 이내</strong>에 삭제 처리가 완료됩니다. 이메일을 통한 요청 시 본인 확인을 위해 추가 인증 절차를 요청할 수 있습니다.</p>
+
+    <h2>6. 삭제 후 영향</h2>
+
+    <ul>
+      <li>삭제된 계정은 복구할 수 없습니다</li>
+      <li>동일한 이메일로 재가입은 가능하나 과거 기록은 복원되지 않습니다</li>
+      <li>진행 중인 대리 기도 요청은 자동으로 해제됩니다</li>
+      <li>기도 광장에 작성한 게시물은 삭제되며 다른 이용자에게 더 이상 노출되지 않습니다</li>
+      <li>앱 내 구매 내역이 있는 경우 환불 규정은 별도로 적용됩니다</li>
+    </ul>
+
+    <h2>7. 문의</h2>
+
+    <p>계정 삭제 절차나 데이터 처리 관련 문의사항이 있으신 경우 아래로 연락 주시기 바랍니다.</p>
+
+    <div class="contact-box">
+      <strong>이메일:</strong> <a href="mailto:heemin1010@gmail.com">heemin1010@gmail.com</a><br>
+      <strong>관련 문서:</strong> <a href="privacy-policy.html">개인정보처리방침</a> · <a href="terms-of-service.html">이용약관</a>
+    </div>
+
+    <footer>
+      성소(Sancta) · 2026 · All Rights Reserved
+    </footer>
+  </div>
 </body>
 </html>
